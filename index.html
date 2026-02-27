@@ -4,273 +4,177 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Premium Houses & Apartments (1BHK, 2BHK, 3BHK, 4BHK) in Bengaluru</title>
-<meta name="description" content="Premium houses and apartments (1BHK, 2BHK, 3BHK, 4BHK) in Bengaluru. Luxury construction, transparent pricing, NRI friendly process. Book free consultation today.">
+<meta name="description" content="Premium houses and apartments (2BHK, 3BHK, 4BHK) in Bengaluru. Price range ₹50 Lakhs - ₹5 Cr. Luxury construction, transparent pricing, NRI friendly process.">
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 <style>
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:'Poppins',sans-serif;background:#0f0f0f;color:#fff;line-height:1.6;}
+.container{width:90%;max-width:1200px;margin:auto;}
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+header{background:#111;padding:20px 0;}
+header .flex{display:flex;justify-content:space-between;align-items:center;}
+header h1{color:#d4af37;font-size:20px;}
+nav a{color:#fff;text-decoration:none;margin-left:20px;font-size:14px;}
+
+.hero{
+background:url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c') center/cover no-repeat;
+height:90vh;
+display:flex;
+align-items:center;
+text-align:center;
+}
+.hero-content{
+background:rgba(0,0,0,0.75);
+padding:40px;
+border-radius:10px;
+width:100%;
+}
+.hero h2{font-size:38px;margin-bottom:20px;}
+.hero p{margin-bottom:15px;font-size:18px;}
+
+.property-highlight{
+margin-top:10px;
+font-size:18px;
+font-weight:600;
+letter-spacing:1px;
+color:#d4af37;
+display:flex;
+justify-content:center;
+gap:20px;
+flex-wrap:wrap;
 }
 
-body {
-    font-family: 'Poppins', sans-serif;
-    background: #0f0f0f;
-    color: #fff;
-    line-height: 1.6;
+.property-highlight span{
+border:1px solid #d4af37;
+padding:6px 14px;
+border-radius:20px;
 }
 
-.container {
-    width: 90%;
-    max-width: 1200px;
-    margin: auto;
+.price-range{
+margin-top:15px;
+font-size:16px;
+font-weight:500;
+opacity:0.85;
 }
 
-/* Sticky Call Bar */
-.sticky-call {
-    background: #d4af37;
-    color: #000;
-    text-align: center;
-    padding: 10px;
-    font-weight: 600;
+.btn{
+background:#d4af37;
+color:#000;
+padding:12px 25px;
+text-decoration:none;
+font-weight:600;
+border-radius:5px;
+display:inline-block;
+margin-top:20px;
+cursor:pointer;
 }
 
-.sticky-call a {
-    color: #000;
-    text-decoration: none;
+section{padding:70px 0;}
+section h2{text-align:center;color:#d4af37;margin-bottom:40px;}
+
+.grid{display:grid;gap:25px;}
+.services{grid-template-columns:repeat(auto-fit,minmax(250px,1fr));}
+.card{background:#1a1a1a;padding:30px;border-radius:10px;text-align:center;}
+
+.projects{grid-template-columns:repeat(auto-fit,minmax(300px,1fr));}
+.projects img{width:100%;border-radius:10px;}
+
+footer{text-align:center;padding:20px;background:#111;margin-top:40px;}
+
+.bottom-contact{
+position:fixed;
+bottom:20px;
+right:20px;
+display:flex;
+gap:15px;
+z-index:999;
 }
 
-/* Header */
-header {
-    background: #111;
-    padding: 20px 0;
+.bottom-contact a{
+padding:14px 22px;
+border-radius:50px;
+font-weight:600;
+text-decoration:none;
+box-shadow:0 8px 25px rgba(0,0,0,0.4);
+transition:0.3s ease;
+cursor:pointer;
 }
 
-header .flex {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.bottom-whatsapp{background:#25D366;color:#fff;}
+.bottom-call{background:#d4af37;color:#000;}
+
+.bottom-contact a:hover{transform:translateY(-3px);}
+
+/* PAYMENT MODAL */
+
+.payment-modal{
+display:none;
+position:fixed;
+z-index:9999;
+left:0;top:0;
+width:100%;height:100%;
+background:rgba(0,0,0,0.85);
+justify-content:center;
+align-items:center;
 }
 
-header h1 {
-    color: #d4af37;
-    font-size: 20px;
+.payment-box{
+background:#fff;
+color:#000;
+padding:30px;
+border-radius:15px;
+text-align:center;
+width:90%;
+max-width:420px;
+position:relative;
 }
 
-nav a {
-    color: #fff;
-    text-decoration: none;
-    margin-left: 20px;
-    font-size: 14px;
+.qr-image{
+width:230px;
+margin:15px 0;
 }
 
-/* Hero */
-.hero {
-    background: url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c') center/cover no-repeat;
-    height: 90vh;
-    display: flex;
-    align-items: center;
-    text-align: center;
+.payment-box input,
+.payment-box textarea{
+width:100%;
+padding:10px;
+margin-bottom:10px;
+border-radius:6px;
+border:1px solid #ccc;
 }
 
-.hero-content {
-    background: rgba(0,0,0,0.75);
-    padding: 40px;
-    border-radius: 10px;
-    width: 100%;
+.payment-box button{
+background:#5f259f;
+color:#fff;
+border:none;
+padding:10px;
+border-radius:6px;
+cursor:pointer;
 }
 
-.hero h2 {
-    font-size: 38px;
-    margin-bottom: 20px;
+.success-message{
+display:none;
+color:green;
+margin-top:15px;
+font-weight:600;
 }
 
-.hero p {
-    margin-bottom: 25px;
-    font-size: 18px;
+.close-btn{
+position:absolute;
+right:15px;
+top:10px;
+font-size:22px;
+cursor:pointer;
 }
 
-.btn {
-    background: #d4af37;
-    color: #000;
-    padding: 12px 25px;
-    text-decoration: none;
-    font-weight: 600;
-    border-radius: 5px;
-    display: inline-block;
+@media(max-width:768px){
+.hero h2{font-size:26px;}
+nav{display:none;}
 }
-
-/* Sections */
-section {
-    padding: 70px 0;
-}
-
-section h2 {
-    text-align: center;
-    color: #d4af37;
-    margin-bottom: 40px;
-}
-
-/* Services */
-.grid {
-    display: grid;
-    gap: 25px;
-}
-
-.services {
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-}
-
-.card {
-    background: #1a1a1a;
-    padding: 30px;
-    border-radius: 10px;
-    text-align: center;
-}
-
-/* Projects */
-.projects {
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-}
-
-.projects img {
-    width: 100%;
-    border-radius: 10px;
-}
-
-/* Testimonials */
-.testimonial {
-    background: #1a1a1a;
-    padding: 30px;
-    border-radius: 10px;
-    text-align: center;
-}
-
-/* Contact */
-.contact-box {
-    max-width: 600px;
-    margin: auto;
-}
-
-input, textarea {
-    width: 100%;
-    padding: 12px;
-    margin-bottom: 15px;
-    border-radius: 5px;
-    border: none;
-}
-
-button {
-    width: 100%;
-    padding: 12px;
-    background: #d4af37;
-    border: none;
-    font-weight: 600;
-    cursor: pointer;
-}
-
-/* Bottom Fixed Contact Bar */
-.bottom-contact {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    display: flex;
-    gap: 15px;
-    z-index: 999;
-}
-
-.bottom-contact a {
-    padding: 14px 22px;
-    border-radius: 50px;
-    font-weight: 600;
-    text-decoration: none;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 8px 25px rgba(0,0,0,0.4);
-    transition: 0.3s ease;
-}
-
-.bottom-whatsapp {
-    background: #25D366;
-    color: #fff;
-}
-
-.bottom-call {
-    background: #d4af37;
-    color: #000;
-}
-
-.bottom-contact a:hover {
-    transform: translateY(-3px);
-}
-
-/* Floating Buttons */
-.float-btn {
-    position: fixed;
-    right: 20px;
-    padding: 14px 20px;
-    border-radius: 50px;
-    font-weight: 600;
-    text-decoration: none;
-    animation: pulse 1.8s infinite;
-    z-index: 999;
-}
-
-.whatsapp {
-    background: #25D366;
-    color: #fff;
-    bottom: 80px;
-}
-
-.call {
-    background: #d4af37;
-    color: #000;
-    bottom: 20px;
-}
-
-@keyframes pulse {
-    0% { transform: scale(1); }
-    50% { transform: scale(1.08); }
-    100% { transform: scale(1); }
-}
-
-/* Footer */
-footer {
-    text-align: center;
-    padding: 20px;
-    background: #111;
-    margin-top: 40px;
-}
-
-/* Responsive */
-@media(max-width: 768px) {
-    .hero h2 {
-        font-size: 26px;
-    }
-
-    nav {
-        display: none;
-    }
-}
-
 </style>
 </head>
-
-<div class="bottom-contact">
-    <a href="https://wa.me/918088338017?text=Hi%20I%20am%20interested%20in%20building%20an%20independent%20house%20in%20Bengaluru."
-       class="bottom-whatsapp">
-        WhatsApp
-    </a>
-
-    <a href="tel:+918088338017"
-       class="bottom-call">
-        Call Now
-    </a>
-</div>
 
 <body>
 
@@ -280,7 +184,6 @@ footer {
 <nav>
 <a href="#services">Services</a>
 <a href="#projects">Projects</a>
-<a href="#contact">Contact</a>
 </nav>
 </div>
 </header>
@@ -289,7 +192,18 @@ footer {
 <div class="container hero-content">
 <h2>Premium Houses & Luxury Apartments in Bengaluru</h2>
 <p>Luxury Quality | Transparent Pricing | On-Time Delivery | NRI Friendly</p>
-<a href="tel:+918088338017" class="btn">Book Free Consultation</a>
+
+<div class="property-highlight">
+<span>2BHK</span>
+<span>3BHK</span>
+<span>4BHK</span>
+</div>
+
+<div class="price-range">
+Price Range: ₹50 Lakhs – ₹5 Cr
+</div>
+
+<a onclick="openPaymentModal()" class="btn">Book Premium Consultation</a>
 </div>
 </section>
 
@@ -309,34 +223,11 @@ footer {
 <div class="container">
 <h2>Our Premium Projects</h2>
 <div class="grid projects">
-<img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c">
-<img src="https://images.unsplash.com/photo-1572120360610-d971b9d7767c">
-<img src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6">
-</div>
-</div>
-</section>
+<img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c" alt="Luxury House Project">
 
-<section>
-<div class="container">
-<h2>What Our Clients Say</h2>
-<div class="testimonial">
-“Extremely professional team. Delivered our 3BHK villa on time with excellent quality.”
-<br><br>– Homeowner, Bengaluru
-</div>
-</div>
-</section>
+<img src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6" alt="Premium Villa Project">
 
-<section id="contact">
-<div class="container">
-<h2>Get Free Cost Estimation</h2>
-<div class="contact-box">
-<form>
-<input type="text" placeholder="Your Name" required>
-<input type="tel" placeholder="Phone Number" required>
-<input type="number" placeholder="Plot Size (Sq.ft)" required>
-<textarea placeholder="Tell us about your project"></textarea>
-<button type="submit">Request Consultation</button>
-</form>
+<img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab" alt="Modern High Rise Apartment Building">
 </div>
 </div>
 </section>
@@ -344,6 +235,61 @@ footer {
 <footer>
 © 2026 EliteBuild Constructions | Bengaluru
 </footer>
+
+<div class="bottom-contact">
+<a onclick="openPaymentModal()" class="bottom-whatsapp">WhatsApp</a>
+</div>
+
+<div id="paymentModal" class="payment-modal">
+<div class="payment-box">
+<span class="close-btn" onclick="closePaymentModal()">×</span>
+
+<h2>Secure Your Consultation Slot</h2>
+<img src="phonepe-qr.jpg" alt="PhonePe QR" class="qr-image">
+<p>Scan & complete payment to proceed.</p>
+
+<form id="leadForm">
+<input type="text" id="name" placeholder="Your Name" required>
+<input type="tel" id="phone" placeholder="Your Phone Number" required>
+<textarea id="project" placeholder="Project Details"></textarea>
+<button type="submit">Submit Details</button>
+</form>
+
+<p class="success-message" id="successMsg">
+Please feel free to call: +91-8088338017, Our agent will contact you within next 30 minutes. 
+</p>
+
+</div>
+</div>
+
+<script>
+function openPaymentModal(){
+document.getElementById("paymentModal").style.display="flex";
+}
+
+function closePaymentModal(){
+document.getElementById("paymentModal").style.display="none";
+}
+
+document.getElementById("leadForm").addEventListener("submit", function(e){
+e.preventDefault();
+
+let name = document.getElementById("name").value;
+let phone = document.getElementById("phone").value;
+let project = document.getElementById("project").value;
+
+let message = "New Consultation Lead:%0A%0A"
++ "Name: " + name + "%0A"
++ "Phone: " + phone + "%0A"
++ "Project: " + project + "%0A%0A"
++ "Payment Completed.";
+
+window.open("https://wa.me/918088338017?text=" + message, "_blank");
+
+document.getElementById("leadForm").style.display="none";
+document.getElementById("successMsg").style.display="block";
+});
+</script>
 
 </body>
 </html>
