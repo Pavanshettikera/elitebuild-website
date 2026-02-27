@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Premium Independent House Builders in Bengaluru</title>
-<meta name="description" content="Premium independent house construction in Bengaluru. Transparent pricing, luxury finishes, NRI friendly process. Book free consultation today.">
+<title>Premium Houses & Apartments (1BHK, 2BHK, 3BHK, 4BHK) in Bengaluru</title>
+<meta name="description" content="Premium houses and apartments (1BHK, 2BHK, 3BHK, 4BHK) in Bengaluru. Luxury construction, transparent pricing, NRI friendly process. Book free consultation today.">
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
@@ -172,39 +172,40 @@ button {
     cursor: pointer;
 }
 
-/* Premium Side Contact Bar */
-.side-contact {
+/* Bottom Fixed Contact Bar */
+.bottom-contact {
     position: fixed;
-    right: 0;
-    top: 40%;
-    transform: translateY(-50%);
+    bottom: 20px;
+    right: 20px;
     display: flex;
-    flex-direction: column;
+    gap: 15px;
     z-index: 999;
 }
 
-.side-contact a {
-    writing-mode: vertical-rl;
-    transform: rotate(180deg);
-    padding: 15px 10px;
-    text-decoration: none;
+.bottom-contact a {
+    padding: 14px 22px;
+    border-radius: 50px;
     font-weight: 600;
-    letter-spacing: 1px;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.4);
     transition: 0.3s ease;
 }
 
-.side-call {
-    background: rgba(212,175,55,0.9);
-    color: #000;
-}
-
-.side-whatsapp {
-    background: rgba(37,211,102,0.9);
+.bottom-whatsapp {
+    background: #25D366;
     color: #fff;
 }
 
-.side-contact a:hover {
-    padding-right: 18px;
+.bottom-call {
+    background: #d4af37;
+    color: #000;
+}
+
+.bottom-contact a:hover {
+    transform: translateY(-3px);
 }
 
 /* Floating Buttons */
@@ -259,14 +260,15 @@ footer {
 </style>
 </head>
 
-<div class="side-contact">
-    <a href="tel:+918088338017" class="side-call">
-        CALL NOW
+<div class="bottom-contact">
+    <a href="https://wa.me/918088338017?text=Hi%20I%20am%20interested%20in%20building%20an%20independent%20house%20in%20Bengaluru."
+       class="bottom-whatsapp">
+        WhatsApp
     </a>
 
-    <a href="https://wa.me/918088338017?text=Hi%20I%20am%20interested%20in%20building%20an%20independent%20house%20in%20Bengaluru."
-       class="side-whatsapp">
-        WHATSAPP
+    <a href="tel:+918088338017"
+       class="bottom-call">
+        Call Now
     </a>
 </div>
 
@@ -285,7 +287,7 @@ footer {
 
 <section class="hero">
 <div class="container hero-content">
-<h2>Premium Independent House Construction in Bengaluru</h2>
+<h2>Premium Houses & Luxury Apartments in Bengaluru</h2>
 <p>Luxury Quality | Transparent Pricing | On-Time Delivery | NRI Friendly</p>
 <a href="tel:+918088338017" class="btn">Book Free Consultation</a>
 </div>
@@ -338,9 +340,6 @@ footer {
 </div>
 </div>
 </section>
-
-<a href="https://wa.me/918088338017?text=Hi%20I%20am%20interested%20in%20building%20an%20independent%20house%20in%20Bengaluru." class="float-btn whatsapp">WhatsApp</a>
-<a href="tel:+918088338017" class="float-btn call">Call</a>
 
 <footer>
 © 2026 EliteBuild Constructions | Bengaluru
